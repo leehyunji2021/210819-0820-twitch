@@ -238,10 +238,10 @@ h1, h2, h3, h4, h5, h6, p, span, input , button, a {
 
 
 .main-container {
-
+	position: relative;
 	width: 100%;
+	height: 100%;
 	min-width: 1340px;
-	/*padding-top: 50px;*/
 }
 
 
@@ -423,19 +423,165 @@ h1, h2, h3, h4, h5, h6, p, span, input , button, a {
 }
 
 
+.content {
+	overflow-y: auto;
+	position: absolute;
+
+	top: 50px;
+	left: 240px;
+
+	bottom: 0;
+	right: 0;
+
+}
+
+.content h1 {
+	font-size: 40px;
+}
 
 
+.content #content-banner {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	background: url('../img/notebook.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.content #content-banner .layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	top: 0;
+	left: 0;
+}
+
+.content #content-banner .layer .txt-wrap {
+	position: absolute;
+	top: 170px;
+	right: 200px;
+}
 
 
+.content .content-container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+/* 태그 디폴트 */
+.content-container .tag-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.content-container .tag-wrap .tag {
+	font-size: 12px;
+	color: #ffffff;
+	background-color: grey;
+	border-radius: 8px;
+
+	padding: 2px 4px 0;
+
+	margin-right: 5px;
+}
+
+.content-container .tag-wrap .tag:last-child {
+	margin-right: 0;
+}
+.content-container .txt-wrap {
+
+}
+
+.content-container .txt-wrap h3 {
+	font-size: 16px;
+}
 
 
+/* 비디오 섹션 */
+
+.video-section {
+
+}
 
 
+.video-section .title-wrap {
+	padding-bottom: 10px;
+}
 
+.video-section .title-wrap h2 {
+	font-size: 20px;
+}
 
+.video-section .video-wrap {
 
+}
 
+.video-section .video-wrap ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
 
+.video-section .video-wrap li {
+
+}
+
+.video-section .video-wrap a {
+	
+}
+
+.video-section .video-wrap .image-wrap {
+	position: relative;
+	width: 333px;
+	height: 186px;
+}
+
+.video-section .video-wrap .image-wrap img {
+	width: 100%;
+	height: 100%;
+}
+
+.video-section .video-wrap .image-wrap .mark {
+	position: absolute;	
+
+	top: 15px;
+	left: 15px;
+
+	border-radius: 5px;
+	background-color: red;
+
+	padding: 2px 4px 0;
+
+	font-size: 14px;
+}
+
+.video-section .video-wrap .video-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	margin-top: 10px;
+}
+
+.video-section .video-wrap .video-bottom .thumbnail {
+	width: 40px;
+	height: 40px;
+}
+
+.video-section .video-wrap .video-bottom .txt-wrap {
+	width: calc(100% - 50px);
+}
+
+.video-section .video-wrap .video-bottom .txt-wrap .source, 
+.video-section .video-wrap .video-bottom .txt-wrap .game {
+	font-size: 14px;
+	color: grey;
+}
 
 
 
