@@ -475,6 +475,7 @@ h1, h2, h3, h4, h5, h6, p, span, input , button, a {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	margin-top: 5px;
 }
 
 .content-container .tag-wrap .tag {
@@ -503,7 +504,11 @@ h1, h2, h3, h4, h5, h6, p, span, input , button, a {
 /* 비디오 섹션 */
 
 .video-section {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 40px;
 
+	border-bottom: solid 1px grey;
 }
 
 
@@ -538,11 +543,18 @@ h1, h2, h3, h4, h5, h6, p, span, input , button, a {
 	position: relative;
 	width: 333px;
 	height: 186px;
+	background-color: #9147ff;
 }
 
 .video-section .video-wrap .image-wrap img {
 	width: 100%;
 	height: 100%;
+
+	transition: transform 0.15s linear;
+}
+
+.video-section .video-wrap .image-wrap:hover img {
+	transform: translate(10px, -10px);
 }
 
 .video-section .video-wrap .image-wrap .mark {
@@ -583,16 +595,134 @@ h1, h2, h3, h4, h5, h6, p, span, input , button, a {
 	color: grey;
 }
 
+.video-section .btn-more {
+	position: absolute;
+
+	width: 100px;
+	height: 30px;
+	background-color: #0e0e10;
+
+	text-align: center;
+	line-height: 30px;
+
+	bottom: -16px;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+.category-section {
+	padding-top: 60px;
+	padding-bottom: 40px;
+
+}
+
+.category-section .title-wrap {
+	padding-bottom: 10px;
+}
+
+.category-section .title-wrap h2 {
+	font-size: 20px;
+}
+
+.category-section .category-wrap {
+
+}
+
+.category-section .category-wrap ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.category-section .category-wrap li {
+	width: 152px;
+}
+
+.category-section .category-wrap img {
+	width: 152px;
+	height: 203px;
+	margin-bottom: 10px;
+}
+
+.category-section .category-wrap .txt-wrap {
+	
+}
 
 
+.category-section .category-wrap .txt-wrap .count {
+	font-size: 14px;
+	color: grey;
+}
 
 
+ footer {
+	width: 100%;
+	padding: 80px 0 150px;
+
+	text-align: center;
+}
+
+ footer .txt-wrap {
+ 	 text-align: center;
+}
+
+ footer .txt-wrap p {
+ 	font-size: 14px;
+
+}
+
+ footer .footer-bottom {
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	align-items: flex-start;
+ 	align-content: stretch;
+
+ 	margin-top: 20px;
+
+}
+
+ footer ul {
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ 	align-content: stretch;
+
+}
+
+ footer ul li {
 
 
+}
+
+ footer ul li a {
+ 	color: grey;
+ 	font-size: 14px;
+}
+
+ footer ul li a:after {
+ 	content: '';
+ 	display: inline-block;
+
+ 	width: 1px;
+ 	height: 12px;
+ 	background-color: grey;
+
+ 	margin: 0 8px;
+
+ 	position: relative;
+ 	top: 1px;
+ }
 
 
-
-
+ footer ul li:last-child a:after {
+ 	content: none;
+ }
 
 
 
